@@ -1,0 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*esto es para que el padding y margin no afecten el tamaño de los elementos */
+  /*font-family: "Times New Roman", Times, serif;*/ /*Alguna fuente que queramos que aparezca en todo el contenido */
+  list-style: none; /*quita los puntos de las listas */
+  text-decoration: none; /*quita el subrayado de los links */
+}
