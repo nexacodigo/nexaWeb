@@ -20,7 +20,7 @@ header {
   align-items: center;
   padding: 20px;
   background: transparent;
-  position: absolute;
+  /* position: absolute; Hacia que se superponga con el footer.*/
   width: 100%;
   top: 0%;
   left: 0%;
@@ -50,7 +50,10 @@ nav ul li a {
   padding: 10px;
 }
 
-.padre {
+/*                          ---SECCION FOOTER---                                       */
+
+.footer-padre {
+  z-index: 99;
   background-color: #242834;
   min-height: 88.5vh;
   width: 100%;
@@ -58,10 +61,10 @@ nav ul li a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
-.hijo {
+.footer-hijo {
   background-color: #242834;
   height: 80%;
   width: 23%;
@@ -70,7 +73,7 @@ nav ul li a {
   align-items: center;
 }
 
-.hijo > div {
+.footer-hijo > div {
   background-color: #242834;
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ nav ul li a {
   height: 100%;
   width: 50%;
 }
-.hijo > div > h4 {
+.footer-hijo > div > h4 {
   color: white;
   text-align: center;
   margin-top: 25%;
@@ -90,7 +93,7 @@ nav ul li a {
 #menuH4 {
   margin-top: 40%;
 }
-.hijo > div p {
+.footer-hijo > div p {
   color: white;
   text-align: start;
   line-height: 2rem;
