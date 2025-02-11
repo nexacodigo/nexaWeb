@@ -10,7 +10,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
-  background-image:url(./imgs/pexels-goumbik-574073.jpg);
+  background-image:url(./imgs/pexels-goumbik-574073.jpg); //no me gusta la img, sigo buscando una.
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ header {
   align-items: center;
   padding: 15px 50px;
   background: transparent;
+  width: 100%;
   top: 0%;
   left: 0%;
   z-index: 100;
@@ -34,22 +35,87 @@ header .logo img {
   border-radius:10px;
 }
 
+/*                     ---BARRA DE NAVEGACION---                  */
+
 nav {
   display: flex;
   align-items: center;
-  background: #373636;
+  background: #242834;
   padding: 8px 20px;
   border-radius: 30px;
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
+nav ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 10px;
+  transition: 0.3s;
+  position: relative;
+}
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%; 
+  height: 2px; 
+  background-color: #e66b1c;
+  transform: scaleY(0);
+  transform-origin: bottom; 
+  transition: transform 0.3s ease;
+}
 
+nav ul li a:hover::before {
+  transform: scaleY(1); 
+}
+
+/*                            ---SECCION HERO---                   */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 90vh; 
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e66b1c;
+}
+
+.hero p {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #242834;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e66b1c;
+}
 /*                          ---SECCION FOOTER---                                       */
 
 .footer-padre {
