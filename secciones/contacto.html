@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--style-->
+    <link rel="stylesheet" href="../style.css" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="./imgs/favicon2.png" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+        <a href="./index.html">
+            <img src="../imgs/LogoNexa4.png" alt="Logo de Nexa">
+        </a>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../secciones/equipo.html">Nuestro equipo</a></li>
+            <li><a href="../secciones/proyectos.html">Portfolio</a></li>
+            <li><a href="../secciones/contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+    <h1>Contactanos</h1>
+    <form action="">
+        <label for="nombre">
+            Nombre y Apellido
+            <input type="text" id="nombre" required>
+        </label>
+        <label for="email">E-mail
+            <input type="email" id="email" required>
+        </label>
+        <label for="mensaje">
+            Mensaje:
+            <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+        
+        
+    </form>
 </body>
 </html>
