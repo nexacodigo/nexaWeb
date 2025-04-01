@@ -77,8 +77,7 @@ nav ul li a:hover {
   font-size: 50px;
   font-weight: bold;
   color: #e66b1c;
-  margin-bottom: 10px; /* Espacio debajo del título */
-  
+  margin-bottom: 10px; 
 
   
 }
@@ -86,15 +85,15 @@ nav ul li a:hover {
 .hero p {
   font-size: 20px;
   color: white;
-  margin-bottom: 20px; /* Espacio debajo del párrafo */
+  margin-bottom: 20px; 
 }
 
 .botones {
   display: flex;
   justify-content: center;
   gap: 20px;
-  align-items: center; /* Asegura alineación vertical */
-  width: 100%; /* Ocupa todo el ancho disponible */
+  align-items: center; 
+  width: 100%; 
 }
 
 .botones .btn {
