@@ -188,7 +188,7 @@ nav ul li a:hover {
   transform: translateY(-5px);
 }
 .services-container {
-  position: relative; /* Para que los elementos dentro se posicionen en relación con este */
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -197,17 +197,17 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute; /* La imagen se superpone en el fondo */
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
 .services-title {
-  position: relative; /* Para asegurarse de que está por encima de la imagen */
+  position: relative;
   z-index: 2;
-  color: white; /* Asegura que el texto sea visible sobre la imagen */
-  text-align: center;
+  color: white;
+  text-align: left;
   padding: 20px;
 }
 
@@ -223,7 +223,7 @@ nav ul li a:hover {
   width: 75%;
   margin: 0 auto;
   position: absolute;
-  z-index: 3; /* Asegura que el contenedor esté por encima de la imagen */
+  z-index: 3;
   left: 40px;
   top: 40px;
 }
@@ -236,4 +236,14 @@ nav ul li a:hover {
   margin: 0 auto;
   width: 80%;
   border-radius: 10px;
+}
+
+.services-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Para que quede detrás del contenido */
 }
