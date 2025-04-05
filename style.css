@@ -13,100 +13,182 @@ body {
   color: white;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-header {
-  background:#1A212E;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.header-container {
+/*Logo arriba a la izquierda*/
+.logo-container{
+  position: absolute;
+  top: 30xp;
+  left: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
-.logo img {
-  width: 100px;
-  height: 100px;
+.logo-img{
+  width: 70px;
+  height: 70px;
   border-radius: 50%; 
-  object-fit: cover;
+  margin-right: 10px;
 }
 
-
-nav ul {
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
+.logo-text{
   color: white;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 0.9rem;
+  line-height: 1.1;
+
 }
 
-nav ul li a:hover {
+/*Navbar flotante*/
+.navbar{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #1A212E;
+  padding: 10px 25px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  z-index: 10;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.navbar a:hover {
   color: #e66b1c;
 }
 
+/*fondo hero con imagen*/
 .hero {
-  margin-top: 80px;
   height: 100vh;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   height: 90vh;
-  padding: 20px;
-  background-color: #252F3D;
+  padding: 0 40px;
+  color: white;
+  position: relative;
+  padding-bottom: 60px;
   
 }
-.hero h1 {
-  font-size: 50px;
+/* Superposición oscura */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/*contenido del hero*/
+.hero-contenido{
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    animation: aparecer 1s ease-in-out;
+}
+
+.hero-contenido h1 {
+  font-size: 3rem;
   font-weight: bold;
   color: #e66b1c;
-  margin-bottom: 10px; 
-
-  
-}
-
-.hero p {
-  font-size: 20px;
-  color: white;
   margin-bottom: 20px; 
 }
 
-.botones {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center; 
-  width: 100%; 
+.hero-contenido p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px; 
 }
 
-.botones .btn {
-  background: #e66b1c;
-  padding: 10px 20px;
-  border-radius: 5px;
+.hero-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-consultar {
+  background-color: #efe3dc;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #1A212E;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-secundario {
+  background-color: #1A212E;
+  border: 1px solid white;
   color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+/* Animación */
+@keyframes aparecer {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 /* POR QUÉ NEXA */
 
-.xqnexa {
+.xqnexa{
   display: flex;
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
 }
+
+.xqnexa h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.xqnexa-hijo{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*esto si quiero qeu se adapte a la pantalla chica*/
+  gap: 40px;
+}
+
+/* Cada característica del xq nexa */
+.xqnexa-nieto {
+  max-width: 300px;
+  background: white;
+  color: #1A212E;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.xqnexa-nieto:hover {
+  transform: translateY(-10px);
+}
+
+.xqnexa-nieto i{
+  color: #e66b1c;
+}
+
+
 
 /*                          ---SECCION FOOTER---                                       */
 
