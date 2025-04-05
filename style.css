@@ -5,7 +5,6 @@
   text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   background-color: #1a212e;
@@ -13,25 +12,24 @@ body {
 }
 
 
-<<<<<<< HEAD
 /*Logo arriba a la izquierda*/
 .logo-container{
   position: absolute;
-  top: 30xp;
+  top: 30px;
   left: 30px;
-=======
-
   display: flex;
   align-items: center;
   z-index: 10;
 }
 
-<<<<<<< HEAD
+
 .logo-img{
   width: 70px;
   height: 70px;
   border-radius: 50%; 
   margin-right: 10px;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 
@@ -63,7 +61,7 @@ body {
 /*fondo hero con imagen*/
 .hero {
   height: 100vh;
-  background-image: url();
+  background-image: url(./imgs/bg-55-BBU4LFhb.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -71,22 +69,15 @@ body {
   text-align: left;
   justify-content: center;
   height: 90vh;
-  padding: 0 40px;
   color: white;
   position: relative;
-  padding-bottom: 60px;
-  padding: 20px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+
   background-color: #252f3d;
 
 }
-/* Superposición oscura */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
+
 
 /*contenido del hero*/
 .hero-contenido{
@@ -169,6 +160,7 @@ body {
   margin-top: 100px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .xqnexa h2{
