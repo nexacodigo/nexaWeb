@@ -21,9 +21,11 @@
   />
   <title>Nexa Código</title>
 
-  <link rel="shortcut icon" href="./imgs/favicon2.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./imgs/favicon2-remove-background.com.png" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="./imgs/favicon5.png" type="image/x-icon" />
+  <!-- link de AOS para animacion -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
 </head>
 
 <body>
@@ -60,27 +62,46 @@
     </div>
   </section>
 
-<!-- Por qué elegirnos -->
-  <section class="xqnexa">
-    <h2>¿Por qué Nexa?</h2>
-    <div class="xqnexa-hijo">
-      <div class="xqnexa-nieto">
-        <i class='bx bxs-heart' class="icono" ></i>
-        <h3>Pasión y compromiso</h3>
-        <p>Amamos lo que hacemos y nos esforzamos al máximo en cada proyecto.</p>
+                <!-- POR QUÉ ELEGIRNOS -->
+  <section class="porque-nexa">
+    <div class="contenedor">
+      
+      <!-- Columna izquierda -->
+      <div class="xqnexa">
+        <h2>¿Por qué Nexa?</h2>
+
+        <div class="motivos-grid">
+          <div class="motivo">
+            <h3>🔧 Soluciones a medida</h3>
+            <p>Creamos desarrollos personalizados según las necesidades de tu proyecto.</p>
+          </div>
+
+          <div class="motivo">
+            <h3>⚙️ Tecnología actualizada</h3>
+            <p>Utilizamos herramientas modernas que garantizan eficiencia y calidad.</p>
+          </div>
+
+          <div class="motivo">
+            <h3>👨‍💻 Equipo comprometido</h3>
+            <p>Te acompañamos en cada etapa, con comunicación clara y constante.</p>
+          </div>
+
+          <div class="motivo">
+            <h3>📈 Resultados comprobables</h3>
+            <p>Entregamos proyectos funcionales, optimizados y listos para escalar.</p>
+          </div>
+        </div>
       </div>
-      <div class="xqnexa-nieto">
-        <i class='bx bxs-cog' class="icono"></i>
-        <h3>Soporte</h3>
-        <p>Te escuchamos y trabajamos con vos para lograr justo lo que necesitás.</p>
+
+      <!-- Columna derecha -->
+      <div class="img-xqnexa">
+        <img src="./imgs/ChatGPT Image 7 abr 2025, 11_04_52.png" alt="Tecnología Nexa" data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="ease-in-out">
       </div>
-      <div class="xqnexa-nieto">
-        <i class='bx bxs-check-circle' class="icono"></i>
-        <h3>Calidad</h3>
-        <p>Aplicamos buenas prácticas para garantizar resultados sólidos</p>
-      </div>
-    </div>  
+    </div>
   </section>
+
+
+
 
     <!-- QUE OFRECEMOS -->
     <section class="section-services">
@@ -156,6 +177,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- script para AOS-->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

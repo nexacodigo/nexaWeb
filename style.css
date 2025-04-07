@@ -13,7 +13,7 @@ body {
 
 
 /*Logo arriba a la izquierda*/
-.logo-container{
+.logo-container {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -23,18 +23,21 @@ body {
 }
 
 
-.logo-img{
+.logo-img {
   width: 70px;
   height: 70px;
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-right: 10px;
   object-fit: contain;
   max-width: 100%;
 }
 
+.logo-text{
+  color: #cfbfb0;
+}
 
 /*Navbar flotante*/
-.navbar{
+.navbar {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -54,6 +57,7 @@ body {
   font-weight: 500;
   transition: color 0.2s ease;
 }
+
 .navbar a:hover {
   color: #e66b1c;
 }
@@ -68,8 +72,7 @@ body {
   align-items: center;
   text-align: left;
   justify-content: center;
-  height: 90vh;
-  color: white;
+  color: #cfbfb0;
   position: relative;
   padding-bottom: 100px;
   margin-bottom: 50px;
@@ -80,29 +83,29 @@ body {
 
 
 /*contenido del hero*/
-.hero-contenido{
-    position: relative;
-    z-index: 1;
-    max-width: 700px;
-    animation: aparecer 1s ease-in-out;
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  animation: aparecer 1s ease-in-out;
 }
 
 .hero-contenido h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #e66b1c;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .hero-contenido p {
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .hero p {
   font-size: 20px;
-  color: white;
+  color: #cfbfb0;
   margin-bottom: 20px;
 }
 
@@ -120,7 +123,7 @@ body {
 }
 
 .btn-consultar {
-  background-color: #efe3dc;
+  background-color: #cfbfb0;
   padding: 12px 25px;
   border-radius: 30px;
   color: #1A212E;
@@ -142,58 +145,100 @@ body {
 /* Animación */
 @keyframes aparecer {
   from {
-      opacity: 0;
-      transform: translateY(40px);
+    opacity: 0;
+    transform: translateY(40px);
   }
 
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* POR QUÉ NEXA */
 
-.xqnexa{
+
+.porque-nexa {
+  /*background: linear-gradient(to right, #1a212e, #144272);*/
+  background-color: #1A212E;
+  color:#cfbfb0;
+  padding: 60px 20px;
+  min-height: 100vh;
   display: flex;
-  font-size: 20px;
-  margin-top: 100px;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
 }
 
-.xqnexa h2{
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-.xqnexa-hijo{
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /*esto si quiero qeu se adapte a la pantalla chica*/
+  flex-direction: column;
   gap: 40px;
 }
 
-/* Cada característica del xq nexa */
-.xqnexa-nieto {
-  max-width: 300px;
-  background: white;
-  color: #1A212E;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.xqnexa-nieto:hover {
-  transform: translateY(-10px);
+.xqnexa {
+  flex: 2;
 }
 
-.xqnexa-nieto i{
-  color: #e66b1c;
+.xqnexa h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 
+.motivos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.motivo h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.motivo p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Imagen pequeña a la derecha */
+.img-xqnexa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-xqnexa img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive para pantallas grandes POR QUÉ ELEGIRNOS*/
+@media (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+  }
+}
+
+/* Responsive para pantallas chicas POR QUÉ ELEGIRNOS */
+@media (max-width: 767px) {
+  .motivos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-xqnexa img {
+    max-width: 60%;
+    margin-top: 30px;
+  }
+}
 
 /*                          ---SECCION FOOTER---                                       */
 
@@ -209,6 +254,7 @@ body {
   position: relative;
   bottom: 0;
 }
+
 .footer-hijo {
   background-color: #1a212e;
   height: 80%;
@@ -218,7 +264,7 @@ body {
   align-items: center;
 }
 
-.footer-hijo > div {
+.footer-hijo>div {
   background-color: #1a212e;
   display: flex;
   flex-direction: column;
@@ -226,7 +272,8 @@ body {
   height: 100%;
   width: 50%;
 }
-.footer-hijo > div > h4 {
+
+.footer-hijo>div>h4 {
   color: white;
   text-align: center;
   margin-top: 25%;
@@ -235,10 +282,12 @@ body {
   font-weight: 800;
   letter-spacing: 0.5px;
 }
+
 #menuH4 {
   margin-top: 40%;
 }
-.footer-hijo > div p {
+
+.footer-hijo>div p {
   color: white;
   text-align: start;
   line-height: 2rem;
@@ -246,11 +295,13 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.3px;
 }
+
 .five {
   background-color: #1a212e;
   height: 30%;
   width: 100%;
 }
+
 #fDerechos h4 {
   margin: auto;
   font-family: sans-serif;
@@ -258,10 +309,12 @@ body {
 }
 
 .footer-icons {
-  color: inherit; /* Usa el color del texto padre */
+  color: inherit;
+  /* Usa el color del texto padre */
   margin-top: 20%;
   transform: translateY(-50%);
 }
+
 .footer-icons a:link {
   text-decoration: none;
   color: white;
@@ -279,6 +332,7 @@ body {
   color: #4d4d4d;
   transform: translateY(-5px);
 }
+
 .services-container {
   position: relative;
   width: 100%;
@@ -337,5 +391,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Para que quede detrás del contenido */
+  z-index: -1;
+  /* Para que quede detrás del contenido */
 }
