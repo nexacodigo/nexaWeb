@@ -5,12 +5,10 @@
   text-decoration: none;
 }
 
-
 body {
   background-color: #1a212e;
   color: white;
 }
-
 
 /*Logo arriba a la izquierda*/
 .logo-container {
@@ -22,7 +20,6 @@ body {
   z-index: 10;
 }
 
-
 .logo-img {
   width: 70px;
   height: 70px;
@@ -32,7 +29,7 @@ body {
   max-width: 100%;
 }
 
-.logo-text{
+.logo-text {
   color: #cfbfb0;
 }
 
@@ -41,7 +38,7 @@ body {
   position: absolute;
   top: 30px;
   right: 30px;
-  background-color: #1A212E;
+  background-color: #1a212e;
   padding: 10px 25px;
   border-radius: 999px;
   display: flex;
@@ -78,9 +75,7 @@ body {
   margin-bottom: 50px;
 
   background-color: #252f3d;
-
 }
-
 
 /*contenido del hero*/
 .hero-contenido {
@@ -126,13 +121,13 @@ body {
   background-color: #cfbfb0;
   padding: 12px 25px;
   border-radius: 30px;
-  color: #1A212E;
+  color: #1a212e;
   font-weight: bold;
   transition: background 0.3s;
 }
 
 .btn-secundario {
-  background-color: #1A212E;
+  background-color: #1a212e;
   border: 1px solid white;
   color: white;
   padding: 12px 25px;
@@ -157,11 +152,10 @@ body {
 
 /* POR QUÉ NEXA */
 
-
 .porque-nexa {
   /*background: linear-gradient(to right, #1a212e, #144272);*/
-  background-color: #1A212E;
-  color:#cfbfb0;
+  background-color: #1a212e;
+  color: #cfbfb0;
   padding: 60px 20px;
   min-height: 100vh;
   display: flex;
@@ -184,7 +178,6 @@ body {
   font-size: 36px;
   margin-bottom: 30px;
 }
-
 
 .motivos-grid {
   display: grid;
@@ -216,7 +209,7 @@ body {
   max-width: 400px;
   height: auto;
   max-height: 400px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive para pantallas grandes POR QUÉ ELEGIRNOS*/
@@ -224,7 +217,7 @@ body {
   .contenedor {
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 }
 
@@ -264,7 +257,7 @@ body {
   align-items: center;
 }
 
-.footer-hijo>div {
+.footer-hijo > div {
   background-color: #1a212e;
   display: flex;
   flex-direction: column;
@@ -273,7 +266,7 @@ body {
   width: 50%;
 }
 
-.footer-hijo>div>h4 {
+.footer-hijo > div > h4 {
   color: white;
   text-align: center;
   margin-top: 25%;
@@ -287,7 +280,7 @@ body {
   margin-top: 40%;
 }
 
-.footer-hijo>div p {
+.footer-hijo > div p {
   color: white;
   text-align: start;
   line-height: 2rem;
