@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,38 +11,104 @@
     <!--favicon-->
     <link rel="shortcut icon" href="./imgs/favicon2.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <div class="logo">
-        <a href="./index.html">
-            <img src="../imgs/LogoNexa4.png" alt="Logo de Nexa">
-        </a>
+        <!-- Logo-->
+        <div class="logo-container">
+            <a href="./index.html"><img src="../imgs/LogoNexa4.png" alt="Logo de Nexa" class="logo-img">
+            </a>
+            <div class="logo-text">
+                <strong>NEXA</strong><br />
+                Código
+            </div>
         </div>
-        <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../secciones/equipo.html">Nuestro equipo</a></li>
-            <li><a href="../secciones/proyectos.html">Portfolio</a></li>
-            <li><a href="../secciones/contacto.html">Contacto</a></li>
-        </ul>
+
+        <!-- NAVBAR FLOTANTE -->
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="../secciones/equipo/equipo.html">Nuestro equipo</a>
+            <a href="../secciones/proyectos.html">Portfolio</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#" class="btn-consultar">Consultar</a>
         </nav>
     </header>
-    <h1>Contactanos</h1>
-    <form action="">
-        <label for="nombre">
-            Nombre y Apellido
-            <input type="text" id="nombre" required>
-        </label>
-        <label for="email">E-mail
-            <input type="email" id="email" required>
-        </label>
-        <label for="mensaje">
-            Mensaje:
-            <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
-        </label>
-        <button type="submit">Enviar</button>
-        
-        
-    </form>
+
+    <!-- Formulario de contacto-->
+    <section class="seccion-contacto">
+        <div class="titulo-contacto">
+            <h2>Contactanos</h2>
+            <p>Es el momento de crear</p>
+        </div>
+        <div class="container-contacto">
+            <form class="form-contacto">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-row full-width">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </section>
 </body>
+
+<footer>
+    <div class="footer-padre">
+        <div class="footer-hijo">
+            <div>
+                <h4>Contacto</h4>
+                <p>nexacodigo@gmail.com</p>
+                <p>+543512742223</p>
+                <p>+5492644420242</p>
+            </div>
+        </div>
+        <div class="footer-hijo">
+            <div class="nieto">
+                <h4>Ponte al tanto</h4>
+                <p>
+                    Lorem ipsum dolor, sitamet consectetur adipisicing elit. Fugiat
+                    odio.
+                </p>
+            </div>
+        </div>
+        <div class="footer-hijo">
+            <div class="nieto">
+                <h4 id="menuH4">Menú</h4>
+                <p>Home</p>
+                <p>Nuestro equipo</p>
+                <p>Portfolio</p>
+                <p>Contacto</p>
+            </div>
+        </div>
+        <div class="footer-hijo">
+            <div class="nieto">
+                <h4>Síguenos en</h4>
+                <div class="footer-icons">
+                    <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-hijo five">
+            <div id="fDerechos">
+                <h4>© 2025 Creado por Nexa</h4>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
