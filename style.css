@@ -21,6 +21,8 @@ body {
   z-index: 10;
 }
 
+
+
 .logo-img {
   width: 70px;
   height: 70px;
@@ -28,10 +30,18 @@ body {
   margin-right: 10px;
   object-fit: contain;
   max-width: 100%;
+  transition: 0.5s;
+  animation: aparecerdeabajo 2s;
+}
+.logo-img:hover{
+  transform: rotate(20deg) scale(1.2);
 }
 
+
 .logo-text {
-  color: #cfbfb0;
+  color: white;
+  animation: aparecerleft 2s;
+  animation-delay: 0.5s;
 }
 
 /*Navbar flotante*/
@@ -80,15 +90,22 @@ body {
 .hero-contenido {
   position: relative;
   z-index: 1;
-  max-width: 700px;
-  animation: aparecer 1s ease-in-out;
+  max-width: 100%;
+  animation: aparecerdeabajo 2s ease-in-out;
 }
+
 
 .hero-contenido h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #e66b1c;
   margin-bottom: 20px;
+  transition: 1s;
+}
+.hero-contenido h1:hover{
+  width: 120%;
+  font-size: 51px;
+  color: white;
 }
 
 .hero-contenido p {
@@ -117,7 +134,7 @@ body {
 }
 
 .btn-consultar {
-  background-color: #cfbfb0;
+  background-color: white;
   padding: 12px 25px;
   border-radius: 30px;
   color: #1a212e;
@@ -133,11 +150,18 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s;
 }
 
+.btn-consultar:hover{
+  background-color: #1a212e;
+  color:white ;
+}
+.btn-secundario:hover{
+  background-color: white;
+  color: #1A212E;
+}
 /* Animación */
-@keyframes aparecer {
+@keyframes aparecerdeabajo {
   from {
     opacity: 0;
     transform: translateY(40px);
@@ -149,6 +173,16 @@ body {
   }
 }
 
+@keyframes aparecerleft {
+  from{
+    transform: translateX(50px);
+    transform: rotate(140deg) scale(3);
+  }
+  to{
+    transform: translateX(0px);
+  }
+  
+}
 /* POR QUÉ NEXA */
 
 .porque-nexa {
